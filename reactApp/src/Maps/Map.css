@@ -1,0 +1,64 @@
+/* Map.css */
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+.hospital-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.hospital-card h4 {
+  margin: 0;
+}
+
+.hospital-card p {
+  margin-top: 5px;
+  word-wrap: break-word; /* Ensure text wraps if it's too long */
+}
+
+.hospital-card button {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.hospital-card button:hover {
+  background-color: #0056b3;
+}
+
+img {
+  width: 100px; /* Set width to 10 pixels */
+  height: 100px; /* Set height to 15 pixels */
+  margin-top: 10px; /* Add some spacing between the image and the button */
+}
