@@ -76,5 +76,5 @@ def gmaps(address):
 if __name__=='__main__':
 
     address = "sagarshet, maharashtra, india"
-    hospoital_data = dict(gmaps(address))
+    hospoital_data = gmaps(address)
     print(hospoital_data)
