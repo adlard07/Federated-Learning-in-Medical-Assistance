@@ -1,3 +1,5 @@
+from src.model_agregation.agregate import Predict
+from tensorflow.keras.models import load_model
 from database.insert_into import PushData
 from flask import Flask, request, jsonify
 from geopy.geocoders import Nominatim
@@ -6,11 +8,12 @@ from flask_cors import CORS
 import numpy as np
 import logging
 import cv2
+import os
 
-
-app = Flask(__name__)
+app = Flask(__name__)  
 CORS(app)
 db = PushData()
+
 
 ####################################################### Authorization ##########################################################
 
@@ -61,17 +64,20 @@ def hospitals():
     return jsonify(hospoital_data)
 
 ####################################################### Model Prediction #######################################################
+
 @app.route('/predict', methods=['POST'])
 def predict():
-    disease = request.form.get('disease')
+    dropdown = request.form.get('disease')
     image = request.files['image'].read()
     
-    # Convert image data to numpy array
     nparr = np.frombuffer(image, np.uint8)
     img = np.array(cv2.imdecode(nparr, cv2.IMREAD_COLOR))
-    print(img.shape)
     
-    return jsonify(success=True, message="Image received and disease prediction started.")
+    predictor = Predict()
+    result = predictor.make_prediction(dropdown, img)
+
+    return result
+    # return jsonify(success=True, message="Image received and disease prediction started.")
 
 
 if __name__ == '__main__':
