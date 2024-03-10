@@ -10,6 +10,27 @@ This project is a Federated Disease Prediction System that utilizes deep learnin
    
 3. **Location-Based Hospital Search:** Offers a search bar where users can input their location to receive a list of the top 20 hospitals nearby for testing related to the predicted disease.
 
+## Description
+The Federated Disease Prediction System is an innovative project that leverages deep learning models to predict diseases based on medical images. By aggregating multiple models from diverse sources, the system enhances prediction accuracy and reliability. Furthermore, it offers a user-friendly search bar feature where individuals can input their location to receive a curated list of the top 20 hospitals nearby for disease testing and consultation. This system aims to streamline the disease prediction process and provide users with convenient access to healthcare services based on their predicted health conditions.
+
+## Methodology
+1. **Data Collection:** Gather a diverse dataset of medical images related to various diseases for training the deep learning models.
+   
+2. **Model Development:** Develop individual deep learning models for disease prediction using TensorFlow and PyTorch, ensuring high accuracy and performance.
+   
+3. **Model Aggregation:** Aggregate the individual models from different sources to create global models that combine the strengths of each, resulting in enhanced prediction capabilities.
+   
+4. **User Interface Development:** Create a user-friendly interface using Flask to allow users to upload medical images, view predicted diseases, and utilize the location-based search functionality.
+   
+5. **Location-Based Hospital Search:** Implement a search feature that integrates with location data to recommend the top 20 hospitals nearby based on the user's input for further testing and consultation.
+   
+6. **Testing and Validation:** Conduct rigorous testing to validate the accuracy and efficiency of the deep learning models and the overall system functionality.
+   
+7. **Deployment:** Deploy the system on a server to make it accessible to users, ensuring scalability and reliability for real-world usage.
+
+By following this methodology, the Federated Disease Prediction System aims to deliver a comprehensive and user-centric solution for disease prediction and healthcare access.
+
+
 ## Installation
 To run this project locally, follow these steps:
 1. Clone the repository from GitHub.
