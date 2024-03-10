@@ -14,7 +14,7 @@ This project is a Federated Disease Prediction System that utilizes deep learnin
 The Federated Disease Prediction System is an innovative project that leverages deep learning models to predict diseases based on medical images. By aggregating multiple models from diverse sources, the system enhances prediction accuracy and reliability. Furthermore, it offers a user-friendly search bar feature where individuals can input their location to receive a curated list of the top 20 hospitals nearby for disease testing and consultation. This system aims to streamline the disease prediction process and provide users with convenient access to healthcare services based on their predicted health conditions.
 
 ## Methodology
-1. **Data Collection:** Gather a diverse dataset of medical images related to various diseases for training the deep learning models.
+1. **Data Collection:** Gather a diverse dataset of medical images related to various diseases for training the deep learning models from different data sources such as Kaggle. For production multiple hospitals and clinics can colaborte contributing their own DL models providing a much effective way of targating this problem.
    
 2. **Model Development:** Develop individual deep learning models for disease prediction using TensorFlow and PyTorch, ensuring high accuracy and performance.
    
@@ -36,7 +36,8 @@ To run this project locally, follow these steps:
 1. Clone the repository from GitHub.
 2. Install the necessary dependencies using `pip install -r requirements.txt`.
 3. Run the application using `python app.py`.
-4. Run the frontend using  `npm start` in the Client directory in the ReactApp directory.
+4. Enter the ReactApp/Client directory by running `cd ReactApp/Client` in the terminal.
+4. Run the frontend using  `npm start`.
 
 ## Usage
 1. Access the application through the provided URL.
